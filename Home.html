@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cesar C. Taclahan Jr. | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Target Cursor -->
+  <div class="target-cursor-wrapper">
+    <div class="target-cursor-dot"></div>
+    <div class="target-cursor-corner corner-tl"></div>
+    <div class="target-cursor-corner corner-tr"></div>
+    <div class="target-cursor-corner corner-br"></div>
+    <div class="target-cursor-corner corner-bl"></div>
+  </div>
+
+  <!-- Dock Navigation -->
+  <div class="dock-outer-vertical">
+    <div class="dock-panel-vertical">
+      <button class="dock-item" data-panel="homePanel">
+        <div class="dock-icon"><i class="fas fa-home"></i></div>
+        <div class="dock-label">Home</div>
+      </button>
+      <button class="dock-item" data-panel="aboutPanel">
+        <div class="dock-icon"><i class="fas fa-user"></i></div>
+        <div class="dock-label">About</div>
+      </button>
+      <button class="dock-item" data-panel="projectsPanel">
+        <div class="dock-icon"><i class="fas fa-briefcase"></i></div>
+        <div class="dock-label">Projects</div>
+      </button>
+      <button class="dock-item" data-panel="contactPanel">
+        <div class="dock-icon"><i class="fas fa-envelope"></i></div>
+        <div class="dock-label">Contact</div>
+      </button>
+    </div>
+  </div>
+
+  <!-- Particles -->
+  <div id="particles-js"></div>
+
+  <!-- Floating Laptop -->
+  <div class="floating-laptop" id="floatingLaptop">
+    <div class="laptop">
+      <div class="screen">
+        <div class="code-line"></div>
+        <div class="code-line"></div>
+        <div class="code-line"></div>
+        <div class="code-line"></div>
+        <div class="code-line"></div>
+      </div>
+      <div class="keyboard">
+        <div class="key-row">
+          <div class="key"></div><div class="key"></div><div class="key"></div><div class="key"></div><div class="key"></div>
+          <div class="key"></div><div class="key"></div><div class="key"></div><div class="key"></div><div class="key"></div>
+        </div>
+        <div class="key-row">
+          <div class="key"></div><div class="key"></div><div class="key"></div><div class="key"></div><div class="key"></div>
+          <div class="key"></div><div class="key"></div><div class="key"></div><div class="key"></div><div class="key"></div>
+        </div>
+        <div class="key-row">
+          <div class="key wide"></div><div class="key"></div><div class="key"></div><div class="key"></div><div class="key"></div>
+          <div class="key"></div><div class="key"></div><div class="key"></div><div class="key wide"></div>
+        </div>
+      </div>
+      <div class="base"></div>
+    </div>
+  </div>
+
+  <!-- Glass Panel Content -->
+  <div class="glass-panel" id="contentPanel">
+    <!-- Home -->
+    <div id="homePanel" class="panel-content active">
+      <h1 class="animated-gradient-text">
+        <span class="gradient-overlay"></span>
+        <span class="text-content">I’m Cesar C. Taclahan Jr.</span>
+      </h1>
+      <div class="focus-container">
+        <span class="focus-word active">Web</span>
+        <span class="focus-word">Developer</span>
+        <span class="focus-word">|</span>
+        <span class="focus-word">Game</span>
+        <span class="focus-word">Creator</span>
+        <div class="focus-frame">
+          <div class="corner top-left"></div>
+          <div class="corner top-right"></div>
+          <div class="corner bottom-left"></div>
+          <div class="corner bottom-right"></div>
+        </div>
+      </div>
+      <div class="profile-card">
+        <img src="Meguro Iku.jpg" alt="Profile">
+        <h2>Cesar C. Taclahan Jr.</h2>
+        <p>Web Developer | Game Creator</p>
+      </div>
+    </div>
+
+    <!-- About -->
+    <div id="aboutPanel" class="panel-content">
+      <h2 class="animated-gradient-text">
+        <span class="gradient-overlay"></span>
+        <span class="text-content">About Me</span>
+        <i id="aboutToggle" class="fas fa-info-circle about-toggle-icon"></i>
+      </h2>
+      <p style="text-align:center;" id="aboutMainText">
+        I am a passionate Web Developer & Game Creator who has overcome challenges to pursue my dreams. 
+        My journey has been about resilience, learning, and creating meaningful digital experiences.
+      </p>
+      <div id="extraInfo" class="hidden-info">
+        <p style="text-align:center;">
+          I am currently a <strong>3rd-year Bachelor of Science in Information Technology (BSIT)</strong> student, 
+          dedicated to enhancing my skills in software development, web technologies, and game design.
+        </p>
+      </div>
+      <div class="tech-links">
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="tech-btn">HTML</a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="tech-btn">CSS</a>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="tech-btn">JavaScript</a>
+        <a href="https://godotengine.org/" target="_blank" class="tech-btn">Godot</a>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div id="projectsPanel" class="panel-content">
+      <h2 class="animated-gradient-text">
+        <span class="gradient-overlay"></span>
+        <span class="text-content">My Projects</span>
+      </h2>
+      <div class="project-cards">
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front"><h3>Game Development</h3></div>
+            <div class="card-back"><p>Various indie games developed using Godot and Unity.</p></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front"><h3>Websites</h3></div>
+            <div class="card-back"><p>Responsive websites for businesses and portfolios.</p></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner">
+            <div class="card-front"><h3>E-commerce</h3></div>
+            <div class="card-back"><p>Full-stack e-commerce platforms with payment integration.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contactPanel" class="panel-content">
+      <h2 class="animated-gradient-text">
+        <span class="gradient-overlay"></span>
+        <span class="text-content">Contact Me</span>
+      </h2>
+      <div class="contact-links">
+        <a href="https://github.com/yourgithub" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/yourlinkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://facebook.com/yourfacebook" target="_blank"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
